@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>Firebase Sign Up</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>Firebase Sign Up Example</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+	
+	
+    <button onclick="login()">Register Account</button>
+  </div>
+  
+
+  <div id="user_div" class="loggednin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to BRUVA. You're currently Registered.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+
+
+   <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase.js"></script>
+  
+  <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDNrAC40QOS5Whi4ylr9qsH-njzhjpFyag",
+    authDomain: "fir-bruvaa.firebaseapp.com",
+    databaseURL: "https://fir-bruvaa.firebaseio.com",
+    projectId: "fir-bruvaa",
+    storageBucket: "fir-bruvaa.appspot.com",
+    messagingSenderId: "544298095766",
+    appId: "1:544298095766:web:cfac4203478f00487a9eb7",
+    measurementId: "G-6T3YBNLYK8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+  <script src="index2.js"></script>
+
+</body>
+</html>
